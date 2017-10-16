@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
 class FilteredFruitList extends Component {
-  constructor(props) {
-    super(props);
+  // constructor(props) {
+  //   super(props);
 
-    this.state = {
-      items: []
-    };
-  }
+  //   this.state = {
+  //     items: []
+  //   };
+  // }
 
   componentWillMount() {
     fetch('/api/fruit')
@@ -28,7 +28,7 @@ class FilteredFruitList extends Component {
 
 FilteredFruitList.defaultProps = {
   fruit: [],
-  filter: []
+  filter: ""
 }
 
 export default FilteredFruitList;
