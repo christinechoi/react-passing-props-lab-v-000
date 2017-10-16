@@ -14,7 +14,9 @@ class App extends Component {
   }
 
   render() {
-    <FruitBasket />
+    return (
+      <FruitBasket />
+    )
   }
 
 
