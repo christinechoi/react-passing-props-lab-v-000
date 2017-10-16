@@ -29,4 +29,12 @@ class FruitBasket extends Component {
   }
 }
 
+FruitBasket.defaultProps = {
+  fruit: [],
+  filters: [],
+  currentFilter: [],
+  updateFilterCallback: null
+}
+
+
 export default FruitBasket;

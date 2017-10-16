@@ -7,7 +7,9 @@ class App extends Component {
     super();
 
     this.state = {
-      fruit: []
+      fruit: [],
+      filters: [],
+      currentFilter: null
     };
   }
 

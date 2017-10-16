@@ -31,4 +31,10 @@ class Filter extends Component {
   }
 }
 
+
+Filter.defaultProps = {
+  filters: [],
+  handleChange: ""
+}
+
 export default Filter;
