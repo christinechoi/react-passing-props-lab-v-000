@@ -13,39 +13,11 @@ const FruitBasket = props => {
 }
 
 
-  
-
-// class FruitBasket extends Component {
-//   constructor() {
-//     super();
-
-//     this.state = {
-//       filters: [],
-//       selectedFilter: null
-//     };
-//   }
-
-//   handleFilterChange = event => {
-//     console.log('new filter: ', event.target.value);
-//     this.setState({ selectedFilter: event.target.value });
-//   }
-
-//   render() {
-//     return (
-//       <div className="fruit-basket">
-//         <Filter handleChange={this.handleFilterChange} />
-//         <FilteredFruitList
-//           filter={this.props.currentFilter} />
-//       </div>
-//     );
-//   }
-// }
-
 FruitBasket.defaultProps = {
   fruit: [],
   filters: [],
   currentFilter: [],
-  updateFilterCallback: null
+  updateFilterCallback: ""
 }
 
 
