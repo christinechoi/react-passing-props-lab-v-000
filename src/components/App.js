@@ -15,10 +15,9 @@ class App extends Component {
 
   render() {
     return (
-      <FruitBasket />
+      <FruitBasket fruit={this.state.fruit} />
     )
   }
-
 
 }
 
