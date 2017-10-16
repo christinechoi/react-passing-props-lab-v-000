@@ -4,13 +4,17 @@ import Filter from './Filter';
 import FilteredFruitList from './FilteredFruitList.js';
 
 
-const FruitBasket = props => {
+const FruitBasket = ({fruit, filters, updateFilterCallback, currentFilter}) =>
   <div className="fruit-basket">
-    <Filter handleChange={props.updateFilterCallback} />
+    <Filter 
+      filters={filters} 
+      handleChange={updateFilterCallback} />
     <FilteredFruitList
-      filter={props.currentFilter} fruit={props.fruit} />
+      filter={currentFilter} 
+      fruit={fruit} />
   </div>
-}
+
+
 
 
 FruitBasket.defaultProps = {
